@@ -224,8 +224,7 @@
 
 .staff {
   padding: 100px 0 140px;
-  background: no-repeat center / contain
-    url(../images/staff_picks_background.jpg);
+  background: no-repeat center / cover url(../images/staff_picks_background.jpg);
 }
 
 .staff__title {
@@ -343,6 +342,7 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
 }
 
 .about__title {
@@ -350,7 +350,9 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  z-index: 1;
+  z-index: 2;
+  position: inherit;
+  max-width: 154px;
 }
 
 .about__content {
@@ -358,6 +360,9 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  margin-left: 120px;
+  position: inherit;
+  z-index: 2;
 }
 
 .about__circle {
@@ -365,6 +370,18 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  top: -121px;
+  left: -91px;
+  z-index: 1;
+}
+
+.about__paragraph {
+  margin: 0 0 32px 0;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .footer {
