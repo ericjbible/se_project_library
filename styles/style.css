@@ -386,9 +386,15 @@
 
 .footer {
   box-sizing: border-box;
+  background: #1f1f1f;
+  color: #fff;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__columns {
+  margin: 60px 102px 60px 80px;
 }
 
 .footer__column_content_hours {
@@ -398,6 +404,8 @@
 }
 
 .footer__logo {
+  width: 116px;
+  height: 21px;
 }
 
 .footer__list {
@@ -421,6 +429,8 @@
 }
 
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .footer__copyright {
